@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+snake_rpg_t_dd_d.egg-info/PKG-INFO
+snake_rpg_t_dd_d.egg-info/SOURCES.txt
+snake_rpg_t_dd_d.egg-info/dependency_links.txt
+snake_rpg_t_dd_d.egg-info/requires.txt
+snake_rpg_t_dd_d.egg-info/top_level.txt

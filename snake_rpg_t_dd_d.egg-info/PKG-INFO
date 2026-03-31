@@ -1,3 +1,15 @@
+Metadata-Version: 2.4
+Name: snake-rpg-t-dd-d
+Version: 0.1.0
+Summary: RPG Snake desenvolvido com TDD e DDD
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+
 <p align="center">
   <img src="https://em-content.zobj.net/source/apple/391/snake_1f40d.png" width="120" alt="Snake RPG Logo"/>
 </p>

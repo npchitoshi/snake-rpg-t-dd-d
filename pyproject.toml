@@ -1,0 +1,30 @@
+[project]
+name = "snake-rpg-t-dd-d"
+version = "0.1.0"
+description = "RPG Snake desenvolvido com TDD e DDD"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pydantic",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "mypy",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
+python_files = "test_*.py"
+addopts = "-v --cov=application --cov=domain --cov=infrastructure"
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+files = ["application", "domain", "infrastructure"]
+
+# Referenciar pastas do projeto para o setuptools
+[tool.setuptools.packages.find]
+include = ["application*", "domain*", "infrastructure*"]
