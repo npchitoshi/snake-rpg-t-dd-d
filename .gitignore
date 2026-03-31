@@ -1,0 +1,17 @@
+# Ambientes Virtuais
+.venv/
+venv/
+env/
+
+# Arquivos do Python/Build
+*.egg-info/
+__pycache__/
+*.py[cod]
+build/
+dist/
+
+# Testes e Cobertura
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
