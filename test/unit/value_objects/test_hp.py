@@ -13,3 +13,12 @@ def test_hp_atual_nao_pode_ser_maior_hp_maximo():
 def test_hp_nao_pode_ser_maior_que_valor_maximo():
     with pytest.raises(ValueError, match="O HP não pode ultrapassar o valor de 255"):
         HP(atual=100, maximo=256)
+
+def test_subtrair_hp_corretamente():
+    hp = HP(atual=10, maximo=10)
+    novo_hp = hp.receber_dano(3)
+
+    assert novo_hp.atual == 7
+    assert novo_hp.maximo == 10
+
+    assert novo_hp is not hp

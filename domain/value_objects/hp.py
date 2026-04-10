@@ -16,3 +16,8 @@ class HP:
 
         if self.maximo > self.LIMITE_GLOBAL_SISTEMA:
             raise ValueError("O HP não pode ultrapassar o valor de 255")
+
+    def receber_dano(self, quantidade: int) -> "HP":
+        novo_valor = max(0, self.atual - quantidade)
+
+        return HP(atual=novo_valor, maximo=self.maximo)
