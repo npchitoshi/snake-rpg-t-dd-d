@@ -14,3 +14,6 @@ from dataclasses import dataclass
 @dataclass()
 Neste caso importamos dataclass, onde por padrão importar as funçoes __init__(construtor), __repr__(print do objeto) e
 __eq__(funçao para comparar o objeto)
+
+* Não quero que este argumento seja passado na hora de criar o objeto
+ especie: str = field(init=False)
